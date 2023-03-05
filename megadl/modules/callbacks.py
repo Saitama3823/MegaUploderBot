@@ -74,5 +74,5 @@ async def meganz_cb(megabot: Client, query: CallbackQuery):
 @Client.on_message(filters.command("start"))
 async def startcmd(megabot: Client, message: Message):
     await message.reply_text(
-        f"Hi **{message.from_user.first_name}** 😇!, \n\nI'm **@{(await megabot.get_me()).username}**, \nA Simple Mega.nz Downloader Bot with some cool features 😉! \n\nUse Below Buttons to Know More About Me and My Commands 😁 \n\n**Made with ❤️ by @NexaBotsUpdates**",
+        f"Hi **{message.from_user.first_name}** 😇!, \n\nI'm **@{(await megabot.get_me()).username}**, \nA Simple Mega.nz Downloader Bot with some cool features 😉! \n\nUse Below Buttons to Know More About Me and My Commands 😁 \n\n**Made with ❤️ by @vkbots2**",
         reply_markup=await get_buttons("start"))
